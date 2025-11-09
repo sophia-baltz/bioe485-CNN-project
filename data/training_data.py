@@ -1,3 +1,16 @@
+#in the vscode terminal run:
+'''
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install "kagglehub[pandas-datasets]"
+python -c "import sys, kagglehub; print(sys.executable); print(kagglehub.__version__)"
+'''
+#then pytjhong:select interpreter: .venv/bin/python
+#then developer:reload window
+
+
+
 import kagglehub
 from kagglehub import KaggleDatasetAdapter
 
